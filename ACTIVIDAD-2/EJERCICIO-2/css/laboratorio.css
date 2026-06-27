@@ -1,0 +1,115 @@
+:root {
+    --color-principal: #1e40af;
+    --color-secundario: #f97316;
+    --color-texto: #ffffff;
+}
+
+.box {
+    background-color: #1e40af;
+    color: #ffffff;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* Regla general — especificidad: 0,1,0 */
+.box {
+  background-color: #1e40af; /* azul */
+}
+
+/* Solo .featured — especificidad: 0,1,0 — mismo nivel, gana por orden */
+.featured {
+  background-color: #f97316; /* naranja */
+}
+
+/* .box.featured juntas — especificidad: 0,2,0 — gana sobre las dos anteriores */
+.box.featured {
+  background-color: #7c3aed; /* morado */
+}
+
+.variable {
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+}
+
+.transparent {
+    opacity: 0.4;
+}
+
+.alfa {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+:root {
+    --color-principal: #1e40af;
+    --color-secundario: #f97316;
+    --color-texto: #ffffff;
+}
+
+/* =============================================
+    REGLA BASE — .box
+    Especificidad: 0,1,0
+    Esta regla aplica a todas las cajas.
+    Cualquier regla con mayor especificidad
+    o que venga después la puede sobrescribir.
+   ============================================= */
+.box {
+    background-color: #1e40af;
+    color: #ffffff;
+    margin: 1rem;
+    padding: 1rem;
+}   
+
+/* =============================================
+    CONFLICTO DE CASCADA — .featured vs .box
+    .featured tiene especificidad 0,1,0 igual que .box.
+    Gana porque viene DESPUÉS en el archivo.
+    Resultado: la Caja 2 debería ser naranja...
+   ============================================= */
+.featured {
+    background-color: #f97316;
+}
+
+/* =============================================
+    CONFLICTO DE CASCADA — .box.featured
+    Especificidad: 0,2,0 — combina dos clases.
+    Gana sobre .box y .featured por separado
+    porque tiene mayor especificidad.
+    Resultado: la Caja 2 es morada. El morado gana.
+   ============================================= */
+.box.featured {
+    background-color: #7c3aed;
+}
+
+/* =============================================
+    USO DE VARIABLES CSS
+    En lugar de escribir el color directamente,
+    usamos var(--nombre) para leer el valor
+    definido en :root. Si cambiamos la variable,
+    el cambio se aplica en todos los lugares
+    donde se use automáticamente.
+   ============================================= */
+.variable {
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+    }
+
+/* =============================================
+    OPACIDAD vs TRANSPARENCIA DE FONDO
+
+    opacity: 0.4 — afecta TODO el elemento:
+    el fondo, el texto y cualquier elemento hijo.
+    El texto se ve desvanecido junto con el fondo.
+
+    rgba() — solo afecta el color de fondo.
+    El texto y los hijos quedan al 100% de opacidad
+    y se ven completamente nítidos.
+   ============================================= */
+.transparent {
+    opacity: 0.4;
+}
+
+.alfa {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}

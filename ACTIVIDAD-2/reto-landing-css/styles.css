@@ -1,0 +1,135 @@
+:root {
+    --color-primario: #1e40af;
+    --color-secundario: #e94560;
+    --color-acento: #f97316;
+    --color-texto-claro: #ffffff;
+    --color-texto-oscuro: #1a1a2e;
+    --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    color: var(--color-texto-oscuro);
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-image: linear-gradient(
+    135deg,
+    #1e40af 0%,
+    #0f3460 60%,
+    #e94560 100%
+    );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.hero__titulo {
+    font-size: 3rem;
+    color: var(--color-texto-claro);
+    margin-bottom: 1rem;
+}
+
+.hero__descripcion {
+    font-size: 1.2rem;
+    color: var(--color-texto-claro);
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+}
+
+.hero__boton {
+    display: inline-block;
+    background-color: var(--color-secundario);
+    color: var(--color-texto-claro);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.85rem 2.5rem;
+    border-radius: 2rem;
+}
+
+.beneficios {
+    background-color: #f0f4ff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.beneficios__titulo {
+    font-size: 2rem;
+    color: var(--color-primario);
+    margin-bottom: 2rem;
+}
+
+.beneficios__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.beneficio__card {
+    background-color: rgba(30, 64, 175, 0.08);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    max-width: 380px;
+    text-align: left;
+}
+
+.beneficio__card h3 {
+    color: var(--color-primario);
+    margin-bottom: 0.5rem;
+}
+
+.beneficio__card p {
+    color: var(--color-texto-oscuro);
+    line-height: 1.6;
+}
+
+.cta {
+    background-image: linear-gradient(
+    135deg,
+    #0f3460 0%,
+    #1e40af 100%
+    );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.cta__contenido {
+    opacity: 0.95;
+}
+
+.cta__titulo {
+    font-size: 2.5rem;
+    color: var(--color-texto-claro);
+    margin-bottom: 1rem;
+}
+
+.cta__descripcion {
+    font-size: 1.1rem;
+    color: var(--color-texto-claro);
+    max-width: 500px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+}
+
+.cta__boton {
+    display: inline-block;
+    background-color: var(--color-acento);
+    color: var(--color-texto-claro);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.85rem 2.5rem;
+    border-radius: 2rem;
+}
