@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Catálogo BEM</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="header__title">⚡ TechStore</h1>
+        <p class="header__subtitle">Los mejores productos tecnológicos</p>
+    </header>
+
+    <main class="catalog">
+
+
+        <div class="card">
+            <img class="card__image" src="https://placehold.co/300x160/1a1a2e/60a5fa?text=MacBook+Pro"
+                alt="MacBook Pro">
+            <div class="card__body">
+                <span class="card__tag">Laptop</span>
+                <h2 class="card__title">💻 MacBook Pro</h2>
+                <p class="card__text">Potencia profesional con chip M3 y pantalla Liquid Retina.</p>
+                <button class="card__button">Ver detalles</button>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img class="card__image" src="https://placehold.co/300x160/1a1a2e/60a5fa?text=Samsung+S24"
+                alt="Samsung S24">
+            <div class="card__body">
+                <span class="card__tag">Smartphone</span>
+                <h2 class="card__title">📱 Samsung S24</h2>
+                <p class="card__text">Cámara de 200MP con inteligencia artificial integrada.</p>
+                <button class="card__button">Ver detalles</button>
+            </div>
+        </div>
+
+
+        <div class="card card--featured">
+            <img class="card__image" src="https://placehold.co/300x160/0a2540/38bdf8?text=Sony+WH-1000XM5"
+                alt="Sony WH-1000XM5">
+            <div class="card__body">
+                <span class="card__tag card__tag--hot">🔥 Oferta</span>
+                <h2 class="card__title">🎧 Sony WH-1000XM5</h2>
+                <p class="card__text">Los mejores auriculares con cancelación de ruido del mercado.</p>
+                <button class="card__button card__button--primary">🛒 Comprar ahora</button>
+            </div>
+        </div>
+
+
+        <div class="card card--featured">
+            <img class="card__image" src="https://placehold.co/300x160/0a2540/38bdf8?text=iPad+Pro" alt="iPad Pro">
+            <div class="card__body">
+                <span class="card__tag card__tag--hot">🔥 Oferta</span>
+                <h2 class="card__title">📲 iPad Pro M2</h2>
+                <p class="card__text">La tablet más potente con pantalla Mini-LED de 12.9 pulgadas.</p>
+                <button class="card__button card__button--primary">🛒 Comprar ahora</button>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

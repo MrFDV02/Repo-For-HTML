@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoZone - Catálogo de Motos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header id="encabezado-principal">
+        <h1 class="header__title">🏍️ MotoZone</h1>
+        <p class="header__subtitle">El mejor catálogo de motos</p>
+        <a href="https://motozone.com">Visitar sitio oficial</a>
+        <a href="catalogo.pdf">Descargar catálogo</a>
+    </header>
+
+
+    <main id="catalogo" class="catalog">
+
+
+        <div class="moto-card">
+            <img class="moto-card__image" src="https://placehold.co/300x180/1a1a1a/e63946?text=Honda+CBR"
+                alt="Honda CBR">
+            <div class="moto-card__body">
+                <span class="moto-card__category">Deportiva</span>
+                <h2 class="moto-card__title">Honda CBR 600RR</h2>
+                <p class="moto-card__text">Motor de 600cc con tecnología MotoGP adaptada para la calle.</p>
+                <p class="moto-card__price">$12.500.000</p>
+                <button class="moto-card__button">Ver detalles</button>
+            </div>
+        </div>
+
+
+        <div class="moto-card">
+            <img class="moto-card__image" src="https://placehold.co/300x180/1a1a1a/e63946?text=Yamaha+MT07"
+                alt="Yamaha MT-07">
+            <div class="moto-card__body">
+                <span class="moto-card__category">Naked</span>
+                <h2 class="moto-card__title">Yamaha MT-07</h2>
+                <p class="moto-card__text">Motor bicilíndrico de 689cc, ágil y perfecta para ciudad.</p>
+                <p class="moto-card__price">$10.800.000</p>
+                <button class="moto-card__button">Ver detalles</button>
+            </div>
+        </div>
+
+
+        <div class="moto-card moto-card--premium">
+            <img class="moto-card__image" src="https://placehold.co/300x180/0d0d0d/ffd700?text=Ducati+Panigale"
+                alt="Ducati Panigale">
+            <div class="moto-card__body">
+                <span class="moto-card__category moto-card__category--hot">🔥 Premium</span>
+                <h2 class="moto-card__title">Ducati Panigale V4</h2>
+                <p class="moto-card__text">La superbike italiana más potente con 214 CV de pura adrenalina.</p>
+                <p class="moto-card__price">$48.000.000</p>
+                <button class="moto-card__button moto-card__button--buy">🛒 Comprar ahora</button>
+            </div>
+        </div>
+
+
+        <div class="moto-card moto-card--premium">
+            <img class="moto-card__image" src="https://placehold.co/300x180/0d0d0d/ffd700?text=BMW+S1000RR"
+                alt="BMW S1000RR">
+            <div class="moto-card__body">
+                <span class="moto-card__category moto-card__category--hot">🔥 Premium</span>
+                <h2 class="moto-card__title">BMW S1000RR</h2>
+                <p class="moto-card__text">Tecnología de Superbike alemana con 210 CV y control de tracción.</p>
+                <p class="moto-card__price">$52.000.000</p>
+                <button class="moto-card__button moto-card__button--buy">🛒 Comprar ahora</button>
+            </div>
+        </div>
+
+    </main>
+
+
+    <section class="form-section">
+        <h2 class="form-section__title">¿Te interesa alguna moto?</h2>
+        <form class="form-section__form">
+            <input type="text" placeholder="Tu nombre">
+            <input type="email" placeholder="Correo electrónico">
+            <input type="text" placeholder="Código de descuento" disabled>
+            <button type="submit" class="moto-card__button moto-card__button--buy">Enviar consulta</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
