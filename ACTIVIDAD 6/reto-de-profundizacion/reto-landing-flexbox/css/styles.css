@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    background-color: #080808;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+
+.btn-fixed {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 999;
+    background-color: #ffffff;
+    color: #080808;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+    transition: all 0.2s;
+}
+
+.btn-fixed:hover {
+    background-color: #cccccc;
+    transform: translateY(-3px);
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 3rem;
+    background-color: #080808;
+    border-bottom: 1px solid #222222;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar__logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.8rem;
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+
+.navbar__links {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.navbar__links a {
+    text-decoration: none;
+    color: #888888;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.2s;
+}
+
+.navbar__links a:hover {
+    color: #ffffff;
+}
+
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #080808;
+    background-image:
+        radial-gradient(ellipse at center, #1a1a1a 0%, #080808 70%);
+    border-bottom: 1px solid #222;
+    padding: 2rem;
+}
+
+.hero__content {
+    max-width: 800px;
+}
+
+.hero__badge {
+    display: inline-block;
+    background-color: #ffffff11;
+    color: #aaaaaa;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
+}
+
+.hero__title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 6rem;
+    color: #ffffff;
+    letter-spacing: 4px;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+
+.hero__subtitle {
+    font-size: 1.1rem;
+    color: #888888;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero__btn {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #080808;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    transition: all 0.2s;
+}
+
+.hero__btn:hover {
+    background-color: #cccccc;
+    transform: translateY(-3px);
+}
+
+
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.section__title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: #ffffff;
+    letter-spacing: 4px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.subsection__title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.8rem;
+    color: #666666;
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+}
+
+
+.reason-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.reason-card {
+    flex: 1;
+    min-width: 260px;
+    background-color: #111111;
+    border: 1px solid #222222;
+    border-radius: 16px;
+    padding: 2rem;
+    transition: border-color 0.2s;
+}
+
+.reason-card:hover {
+    border-color: #444444;
+}
+
+.reason-card__icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.reason-card__title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-bottom: 0.8rem;
+}
+
+.reason-card__text {
+    font-size: 0.9rem;
+    color: #888888;
+    line-height: 1.8;
+}
+
+
+.featured-artists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+.artist-card--featured {
+    flex: 1;
+    min-width: 300px;
+    background-color: #111111;
+    border: 1px solid #333333;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.artist-card--featured:hover {
+    border-color: #ffffff;
+    transform: translateY(-4px);
+}
+
+
+.artist-card__badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: #ffffff;
+    color: #080808;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+.artist-card__img {
+    width: 100%;
+    display: block;
+}
+
+.artist-card__body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.artist-card__tag {
+    display: inline-block;
+    background-color: #ffffff11;
+    color: #aaaaaa;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    align-self: flex-start;
+}
+
+.artist-card__name {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+
+.artist-card__text {
+    font-size: 0.9rem;
+    color: #888888;
+    line-height: 1.8;
+}
+
+.artist-card__btn {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #080808;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.85rem;
+    align-self: flex-start;
+    transition: background-color 0.2s;
+}
+
+.artist-card__btn:hover {
+    background-color: #cccccc;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 1.5rem;
+}
+
+.gallery__card {
+    width: calc(33% - 1rem);
+    min-width: 240px;
+    background-color: #111111;
+    border: 1px solid #222222;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    transition: border-color 0.2s;
+}
+
+.gallery__card:hover {
+    border-color: #444444;
+}
+
+.gallery__tag {
+    display: inline-block;
+    background-color: #ffffff11;
+    color: #888888;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    align-self: flex-start;
+}
+
+.gallery__title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.4rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.gallery__text {
+    font-size: 0.85rem;
+    color: #666666;
+    line-height: 1.6;
+    flex: 1;
+}
+
+.gallery__btn {
+    display: inline-block;
+    background-color: #111111;
+    color: #888888;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid #333;
+    text-align: center;
+    margin-top: auto;
+    transition: all 0.2s;
+}
+
+.gallery__btn:hover {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+
+.clubs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.club-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #111111;
+    border: 1px solid #222222;
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    transition: border-color 0.2s;
+}
+
+.club-item:hover {
+    border-color: #444444;
+}
+
+.club-item__number {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: #333333;
+    min-width: 60px;
+}
+
+.club-item__name {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.8rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+}
+
+.club-item__text {
+    font-size: 0.9rem;
+    color: #666666;
+}
