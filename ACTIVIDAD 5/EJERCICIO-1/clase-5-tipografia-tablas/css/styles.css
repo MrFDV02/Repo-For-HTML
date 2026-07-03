@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+    padding: 40px;
+}
+
+
+.intro-card {
+    background: linear-gradient(135deg, #1a0000, #2d0a0a);
+    border: 1px solid #c0392b;
+    border-radius: 16px;
+    padding: 40px;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.intro-card__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #e74c3c;
+    margin-bottom: 8px;
+}
+
+
+.intro-card__subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+
+
+.intro-card__text {
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+
+.intro-card__highlight {
+    display: block;
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #e74c3c;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-top: 1px solid #c0392b;
+    padding-top: 16px;
+}
+
+
+.table-section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.table-section__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #e74c3c;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+.schedule-table thead tr {
+    background-color: #e74c3c;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.schedule-table th {
+    padding: 14px 18px;
+    text-align: left;
+    font-weight: 600;
+}
+
+
+.schedule-table tbody tr {
+    border-bottom: 1px solid #2a2a2a;
+    transition: background-color 0.2s;
+}
+
+
+.schedule-table tbody tr:nth-child(even) {
+    background-color: #1a1a1a;
+}
+
+.schedule-table tbody tr:nth-child(odd) {
+    background-color: #141414;
+}
+
+
+.schedule-table tbody tr:hover {
+    background-color: #2d0a0a;
+}
+
+.schedule-table td {
+    padding: 14px 18px;
+    font-size: 0.95rem;
+    color: #cccccc;
+}
+
+
+.schedule-table td:first-child {
+    font-weight: 700;
+    color: #e74c3c;
+    text-align: center;
+}

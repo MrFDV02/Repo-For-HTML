@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio Box Model</title>
+    <link rel="stylesheet" href="css/box.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>📦 Laboratorio: Modelo de Cajas</h1>
+        <p>Comparación visual de content, padding, border, margin y overflow</p>
+    </header>
+
+    <main class="lab">
+
+        <div class="caja caja--content">
+            <h2>1. Content</h2>
+            <p>Esta caja solo tiene ancho y alto definidos. Sin padding ni border. El contenido ocupa todo el espacio
+                disponible.</p>
+        </div>
+
+
+        <div class="caja caja--padding">
+            <h2>2. Padding</h2>
+            <p>Esta caja tiene padding generoso. Notá el espacio entre el borde y el texto. El contenido respira más.
+            </p>
+        </div>
+
+
+        <div class="caja caja--border">
+            <h2>3. Border</h2>
+            <p>Esta caja tiene un borde grueso y de color diferente. El borde se suma al tamaño total si no usás
+                box-sizing: border-box.</p>
+        </div>
+
+
+        <div class="caja caja--margin">
+            <h2>4. Margin</h2>
+            <p>Esta caja tiene margin grande. Notá el espacio externo que la separa de las demás cajas del laboratorio.
+            </p>
+        </div>
+
+
+        <div class="caja caja--radius">
+            <h2>5. Border Radius</h2>
+            <p>Esta caja tiene border-radius. Las esquinas se redondean según el valor que se le asigne.</p>
+        </div>
+
+
+        <div class="caja caja--overflow-visible">
+            <h2>6. Overflow: visible</h2>
+            <p>El contenido se desborda fuera de la caja sin ser cortado. Este es el comportamiento por defecto del
+                navegador cuando el contenido supera el tamaño definido de la caja y no se controla con overflow.</p>
+        </div>
+
+        <div class="caja caja--overflow-hidden">
+            <h2>7. Overflow: hidden</h2>
+            <p>El contenido que se sale de la caja es cortado y no se muestra. Lo que supera el límite definido
+                simplemente desaparece sin dejar rastro visible para el usuario.</p>
+        </div>
+
+
+        <div class="caja caja--overflow-scroll">
+            <h2>8. Overflow: scroll</h2>
+            <p>Aparece una barra de desplazamiento siempre, aunque el contenido no la necesite. Permite al usuario hacer
+                scroll para ver todo el contenido dentro de la caja definida.</p>
+        </div>
+
+
+        <div class="caja caja--overflow-auto">
+            <h2>9. Overflow: auto</h2>
+            <p>La barra de desplazamiento aparece solo cuando el contenido realmente lo necesita. Es la opción más
+                inteligente y recomendada para la mayoría de los casos en producción.</p>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+    padding: 40px;
+}
+
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #e74c3c;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #888;
+    font-size: 1rem;
+}
+
+
+.lab {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+
+.caja {
+    width: 280px;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.caja h2 {
+    font-size: 1rem;
+    color: #e74c3c;
+    margin-bottom: 8px;
+}
+
+
+.caja--content {
+    padding: 0;
+    border: none;
+}
+
+
+.caja--padding {
+    padding: 30px;
+    border: 1px solid #333;
+}
+
+.caja--border {
+    padding: 16px;
+    border: 6px solid #e74c3c;
+}
+
+
+.caja--margin {
+    padding: 16px;
+    border: 1px solid #333;
+    margin: 40px;
+}
+
+
+.caja--radius {
+    padding: 16px;
+    border: 2px solid #60a5fa;
+    border-radius: 50px;
+}
+
+
+.caja--overflow-visible {
+    padding: 16px;
+    border: 2px dashed #facc15;
+    height: 80px;
+    overflow: visible;
+}
+
+
+.caja--overflow-hidden {
+    padding: 16px;
+    border: 2px dashed #f87171;
+    height: 80px;
+    overflow: hidden;
+}
+
+
+.caja--overflow-scroll {
+    padding: 16px;
+    border: 2px dashed #4ade80;
+    height: 80px;
+    overflow: scroll;
+}
+
+
+.caja--overflow-auto {
+    padding: 16px;
+    border: 2px dashed #c084fc;
+    height: 80px;
+    overflow: auto;
+}
